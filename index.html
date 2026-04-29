@@ -1,1 +1,217 @@
-<!-- kjnvov -->
+<html>
+<head>
+    <title>Alumni Portal</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #f5f7fa;
+        }
+      
+        .hero {
+            background: url('https://t3.ftcdn.net/jpg/01/22/82/76/360_F_122827651_CP5EFYCbeFavIvnXa45GxnLgjTAG4Ae7.jpg') no-repeat center/cover;
+            height: 300px;
+            position: relative;
+        }
+
+        .overlay {
+            background: rgba(0,0,0,0.6);
+            color: white;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+       
+        nav {
+            background: #2c3e50;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #1abc9c;
+        }
+       
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            max-width: 500px;
+            margin: auto;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            background: #2c3e50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #1abc9c;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .donation-btns button {
+            width: auto;
+            margin: 5px;
+            background: #27ae60;
+        }
+
+        .news-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .news-card {
+            background: white;
+            width: 250px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .news-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .news-card h3 {
+            margin: 10px;
+        }
+
+        .news-card p {
+            padding: 0 10px 15px;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header class="hero">
+    <div class="overlay">
+        <h1>School Alumni Portal</h1>
+        <p>Reconnect • Celebrate • Contribute</p>
+    </div>
+</header>
+
+<nav>
+    <a href="#register">Register</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#donate">Donate</a>
+    <a href="#news">News</a>
+</nav>
+
+<section id="register">
+    <h2>Join Our Alumni Network</h2>
+    <div class="card">
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Batch Year" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Join Now</button>
+        </form>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Memories Gallery</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f">
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7">
+        <img src="https://plus.unsplash.com/premium_photo-1682974407026-581fe0e550ea">
+    </div>
+</section>
+
+<section id="donate">
+    <h2>Support Your School</h2>
+    <div class="card">
+        <p>Select Amount:</p>
+        <div class="donation-btns">
+            <button>₹500</button>
+            <button>₹1000</button>
+            <button>₹2000</button>
+        </div>
+        <input type="number" placeholder="Custom Amount">
+        <button class="donate-btn">Donate Now</button>
+    </div>
+</section>
+
+<section id="news">
+    <h2>Latest Updates</h2>
+
+    <div class="news-container">
+        <div class="news-card">
+            <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b">
+            <h3>Alumni Meet 2026</h3>
+            <p>Join us for a grand reunion event.</p>
+        </div>
+
+        <div class="news-card">
+            <img src="https://images.unsplash.com/photo-1588072432836-e10032774350">
+            <h3>New Campus</h3>
+            <p>New modern infrastructure coming soon.</p>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Alumni Portal | Designed with ❤️</p>
+</footer>
+
+</body>
+</html>
